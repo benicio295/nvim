@@ -215,19 +215,6 @@ return {
 		},
 	},
 	{
-		"HakonHarnes/img-clip.nvim",
-		opts = {
-			default = {
-				dir_path = "assets-paste",
-				prompt_for_file_name = false,
-				drag_and_drop = {
-					insert_mode = true,
-				},
-			},
-		},
-		keys = require("config.keymaps").imgClipKeys,
-	},
-	{
 		"MeanderingProgrammer/render-markdown.nvim",
 		ft = { "markdown", "Avante" },
 		dependencies = { "nvim-tree/nvim-web-devicons" },

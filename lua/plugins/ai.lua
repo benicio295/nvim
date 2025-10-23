@@ -18,9 +18,7 @@ return {
 				["*"] = true,
 			},
 			suggestion = {
-				auto_trigger = true,
-				hide_during_completion = true,
-				keymap = require("config.keymaps").copilotKeys,
+				enabled = false,
 			},
 			should_attach = function(_, bufname)
 				if string.match(bufname, "%.env") then
@@ -29,6 +27,10 @@ return {
 				return true
 			end,
 		},
+	},
+	{
+		"giuxtaposition/blink-cmp-copilot",
+		lazy = true,
 	},
 	{
 		"Kaiser-Yang/blink-cmp-avante",
@@ -45,7 +47,6 @@ return {
 			"MunifTanjim/nui.nvim",
 			"nvim-tree/nvim-web-devicons",
 			"zbirenbaum/copilot.lua",
-			"HakonHarnes/img-clip.nvim",
 		},
 		opts = {
 			instructions_file = "avante.md",

@@ -4,6 +4,7 @@ return {
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = {
 			"Kaiser-Yang/blink-cmp-avante",
+			"giuxtaposition/blink-cmp-copilot",
 		},
 		version = "*",
 		opts = {
@@ -39,6 +40,7 @@ return {
 			appearance = {
 				nerd_font_variant = "normal",
 				kind_icons = {
+					Copilot = "",
 					Text = "",
 					Method = "󰊕",
 					Function = "󰊕",
@@ -110,11 +112,16 @@ return {
 				},
 			},
 			sources = {
-				default = { "avante", "lsp", "path", "snippets", "buffer" },
+				default = { "avante", "copilot", "lsp", "path", "snippets", "buffer" },
 				providers = {
 					avante = {
 						module = "blink-cmp-avante",
 						name = "Avante",
+					},
+					copilot = {
+						module = "blink-cmp-copilot",
+						name = "copilot",
+						async = true,
 					},
 				},
 			},

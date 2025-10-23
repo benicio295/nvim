@@ -24,10 +24,6 @@ Before you begin, ensure you have the following installed:
   - `curl`
   - `unzip`
   - `gzip`
-- **Clipboard Manager** (choose one):
-  - `pngpaste` (macOS)
-  - `xclip` (Linux with X11)
-  - `wl-clipboard` (Linux with Wayland)
 
 ## Installation
 

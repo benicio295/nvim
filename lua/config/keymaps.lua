@@ -1,12 +1,4 @@
 local keymaps = {
-	copilotKeys = {
-		accept = "<M-a>",
-		accept_word = "<M-a>w",
-		accept_line = false,
-		dismiss = "<M-d>",
-		next = false,
-		prev = false,
-	},
 	avanteKeys = {
 		prompt_logger = {
 			next_prompt = {
@@ -100,9 +92,6 @@ local keymaps = {
 				desc = "Open Chat",
 			},
 		},
-	},
-	imgClipKeys = {
-		{ "<leader>p", "<cmd>PasteImage<cr>", desc = "Paste image from system clipboard" },
 	},
 	persistenceKeys = {
 		{
