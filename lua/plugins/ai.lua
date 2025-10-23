@@ -35,23 +35,6 @@ return {
 		lazy = true,
 	},
 	{
-		"ravitemer/mcphub.nvim",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-		},
-		event = "BufReadPost",
-		build = "bundled_build.lua",
-		opts = {
-			use_bundled_binary = true,
-			extensions = {
-				avante = {
-					make_slash_commands = true,
-				},
-			},
-		},
-		keys = require("config.keymaps").mcphubKeys,
-	},
-	{
 		"yetone/avante.nvim",
 		build = vim.fn.has("win32") ~= 0
 				and "powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false"
@@ -84,30 +67,6 @@ return {
 				auto_suggestions = false,
 				auto_set_keymaps = true,
 			},
-			system_prompt = function()
-				local hub = require("mcphub").get_hub_instance()
-				return hub and hub:get_active_servers_prompt() or ""
-			end,
-			disabled_tools = {
-				-- prevent tool conflict with mcphub.nvim
-				"bash",
-				"ls",
-				"grep",
-				"glob",
-				"view",
-				"create",
-				"write_to_file",
-				"edit_file",
-				"replace_in_file",
-				"insert",
-				"undo_edit",
-				"get_diagnostics",
-			},
-			custom_tools = function()
-				return {
-					require("mcphub.extensions.avante").mcp_tool(),
-				}
-			end,
 			slash_commands = {},
 			shortcuts = {},
 			windows = {

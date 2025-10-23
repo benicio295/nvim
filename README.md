@@ -85,7 +85,6 @@ This configuration comes with a curated list of plugins to enhance your developm
 
 - **copilot.lua**: GitHub Copilot integration.
 - **avante.nvim**: A multi-modal AI companion.
-- **mcphub.nvim**: A client MCP.
 
 ### UI
 

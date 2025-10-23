@@ -7,9 +7,6 @@ local keymaps = {
 		next = false,
 		prev = false,
 	},
-	mcphubKeys = {
-		{ "<leader>m", "<cmd>MCPHub<cr>", desc = "Open MCPHub" },
-	},
 	avanteKeys = {
 		prompt_logger = {
 			next_prompt = {
