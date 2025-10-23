@@ -63,9 +63,6 @@ Here are some key mappings to get you started. The `<leader>` is set to space ke
 | `<leader>t` | Toggle Terminal |
 | `==` | Format code |
 | `<leader>a` | Open AI Chat |
-| `<M-a>` | Accept Copilot suggestions |
-| `<leader>m`|Open MCP Hub |
-| `<leader>p` | Paste image from system clipboard |
 | `<leader>r` | Restore Last Session |
 | `<leader>td` | Open/Close Diagnostics |
 | `[b` / `]b` | Previous/Next Tab |
