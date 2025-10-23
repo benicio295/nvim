@@ -175,7 +175,7 @@ return {
 							fuzzy = true,
 						},
 						layout = {
-							preview = true,
+							preview = false,
 							auto_hide = { "input" },
 						},
 						win = {
