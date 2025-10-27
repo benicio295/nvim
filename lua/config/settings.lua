@@ -34,3 +34,11 @@ opt.ruler = false
 opt.guicursor = table.concat({
 	"n-v-c:block-blinkwait700-blinkoff400-blinkon250",
 })
+
+-- remap basic nvim actions to use more natural keys
+vim.keymap.set({ "n", "v" }, "d", '"_d')
+vim.keymap.set("n", "D", '"_D')
+vim.keymap.set({ "n", "v" }, "c", '"_c')
+vim.keymap.set("n", "C", '"_C')
+vim.keymap.set({ "n", "v" }, "x", '"_x')
+vim.keymap.set({ "n", "v" }, "X", '"_X')
