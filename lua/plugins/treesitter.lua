@@ -84,7 +84,8 @@ return {
 				end
 				return true
 			end,
-			line_numbers = false,
+			trim_scope = "outer",
+			line_numbers = true,
 		},
 	},
 }
